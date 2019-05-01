@@ -1,10 +1,10 @@
 # Getting started with Spring REST Doc
 
-[Spring REST Docs](https://spring.io/projects/spring-restdocs):
- Document RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC Test.
+[Spring REST Docs](https://spring.io/projects/spring-restdocs)
+> Document RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC Test.
 
-Spring REST Doc creates auto-generated document snippets.
-You can integrate it into hand-generated document like this:
+Spring REST Doc creates auto-generated document snippets.<br>
+You can integrate auto-generated snippets into hand-generated document like this:
 ![img4](./img/img4.png)
 
 ## Environment
@@ -34,11 +34,11 @@ Settings
 ### Add `snippetsDir` variable
 
 By default, following error may happen.
-```
-Could not get unknown property 'snippetsDir' for task ':test' of type org.gradle.api.tasks.testing.Test.
-```
 
-Add `snippetsDir` in build.gradle:
+> Could not get unknown property 'snippetsDir' for task ':test' of type org.gradle.api.tasks.testing.Test.
+
+To fix it, Add `snippetsDir` in build.gradle:
+
 ```
 ext {
 	snippetsDir = file('build/generated-snippets')
@@ -124,6 +124,7 @@ $ ./gradlew test
 ```
 
 Asciidoc files will be generated:
+
 ![img2](./img/img2.png)
 
 
@@ -148,7 +149,9 @@ $ ./gradlew asciidoctor
 ```
 
 `index.html` will be generated:
+
 ![img3](./img/img3.png)
+
 
 ### Open index.html in web browser
 ![img4](./img/img4.png)
