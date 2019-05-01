@@ -1,0 +1,5 @@
+# API Document
+
+## Products.list
+
+operation::products/list[snippets='http-request,http-response']
